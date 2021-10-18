@@ -1,50 +1,3 @@
-/* Features
-Team
-Sign In
-
-All your files in one secure location, accessible anywhere.
-
-Fylo stores your most important files in one secure location. 
-Access them wherever you need, share and collaborate with friends, 
-family, and co-workers.
-
-Get Started
-
-Stay productive, wherever you are
-
-Never let location be an issue when accessing your files. Fylo has you 
-covered for all of your file storage needs.
-
-Securely share files and folders with friends, family and colleagues for 
-live collaboration. No email attachments required!
-
-See how Fylo works
-
-Fylo has improved our team productivity by an order of magnitude. Since 
-making the switch our team has become a well-oiled collaboration machine.
-
-Kyle Burton
-Founder & CEO, Huddle
-
-Get early access today
-
-It only takes a minute to sign up and our free starter tier is extremely generous. 
-If you have any questions, our support team would be happy to help you.
-
-Get Started For Free
-
-Phone: +1-543-123-4567
-example@fylo.com
-
-About Us
-Jobs
-Press
-Blog
-
-Contact Us
-Terms
-Privacy */
-
 :root {
   /* ### Primary */
 
@@ -63,19 +16,24 @@ Privacy */
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 90px;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 100px;
 }
 
 header nav .menu ul {
@@ -84,26 +42,407 @@ header nav .menu ul {
 }
 
 header nav .menu li {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 header nav .menu ul li a {
   text-decoration: none;
   color: var(--Very-Dark-Blue);
+  padding-bottom: 2px;
 }
 
+header nav .menu ul li a:hover {
+  font-weight: 700;
+}
 
+header .banner {
+  margin-top: 65px;
+  min-height: 65vh;
+  background-image: url(../images/illustration-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 51px;
+  display: flex;
+  align-items: center;
+}
 
+header .banner .banner-left {
+  width: 45%;
+}
 
+header .banner .banner-left h2 {
+  font-size: 40px;
+  padding-bottom: 25px;
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+}
 
+header .banner .banner-left p {
+  width: 80%;
+}
 
+header .banner .buttons {
+  padding-top: 20px;
+}
 
+header .banner .buttons input {
+  padding: 10px 14px;
+  border: 2px solid var(--Light-Gray);
+  color: var(--Light-Gray);
+  padding-right: 100px;
+}
 
-.attribution {
+header .banner .buttons button {
+  border: none;
+  background-color: var(--Bright-Blue);
+  color: var(--Light-Grayish-Blue);
+  padding: 10px 60px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+section.content-info {
+  margin-top: 86px;
+  background-image: url(../images/illustration-2.svg),
+    url(../images/bg-curve-desktop.svg);
+  background-size: 30%, cover;
+  background-repeat: no-repeat;
+  background-position: 90% center, top;
+}
+
+section .content {
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+section .content h2 {
+  font-size: 40px;
+  padding-bottom: 25px;
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+}
+
+section .content p {
+  margin-bottom: 15px;
+}
+
+section .content a {
+  color: var(--Moderate-Cyan);
+  text-decoration: none;
+  border-bottom: 1px solid var(--Moderate-Cyan);
+  width: 100%;
+}
+
+section .card {
+  width: 300px;
+  padding: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+section .card > div img {
+  margin: 0 25px;
+  color: var(--Very-Dark-Blue);
+}
+
+section .card p {
+  margin: 15px 25px;
+  font-size: 15px;
+}
+
+section .card .users {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px 25px;
+}
+
+section .card .users > div {
+  padding: 0 10px;
+}
+
+section .card .users img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+}
+
+section .card .users h4 {
+  color: var(--Very-Dark-Blue);
   font-size: 11px;
+}
+
+section .card .users span {
+  font-size: 8px;
+}
+
+section.access {
+  background-color: var(--Desaturated-Blue);
+}
+
+section.access .access-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+section.access .access-content div:first-child {
+  width: 35%;
+}
+
+section.access .access-content h3 {
+  font-size: 30px;
+  color: var(--Light-Grayish-Blue);
+  margin-bottom: 30px;
+}
+
+section.access .access-content p {
+  color: var(--Light-Grayish-Blue);
+}
+
+section.access .access-content div:last-child {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+section.access .access-content input {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+section.access .access-content button {
+  box-shadow: rgb(0 0 0 / 24%) 1px 4px 11px;
+  background-color: var(--Bright-Blue);
+  color: var(--Light-Grayish-Blue);
+  padding: 13px 0px;
+  margin: 15px 0px;
+  cursor: pointer;
+  border: none;
+  width: 39%;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: var(--Very-Dark-Blue);
+}
+
+footer .col-logo {
+  margin-bottom: 30px;
+}
+
+footer .col-logo img {
+  filter: brightness(0) invert(1);
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+footer .row {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+footer .row .col .contact {
+  display: flex;
+  align-items: center;
+  line-height: 35px;
+}
+
+footer .row .col .contact img {
+  margin-right: 20px;
+  width: 18px;
+  height: 18px;
+}
+
+footer .row .col .contact p {
+  color: var(--Light-Grayish-Blue);
+}
+
+footer .row .col ul li {
+  list-style: none;
+}
+
+footer .row .col ul li a {
+  text-decoration: none;
+  color: var(--Light-Grayish-Blue);
+  line-height: 35px;
+}
+
+footer .row .col-social ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .row .col-social ul li {
+  list-style: none;
+}
+
+footer .row .col-social ul li i {
+  border-radius: 50%;
+  border: 1px solid var(--Light-Grayish-Blue);
+  color: var(--Light-Grayish-Blue);
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 25px;
+  width: 20px;
+  height: 20px;
   text-align: center;
 }
 
+footer .row .col ul li a:hover,
+footer .row .col-social ul li a:hover i {
+  color: var(--Bright-Blue);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
+  background-color: var(--Light-Grayish-Blue);
+  height: 30px;
+}
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Bright-Blue);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 15px 0 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 45px;
+  }
+
+  header nav .brand img {
+    width: 70px;
+  }
+
+  header nav .menu li {
+    margin-left: 10px;
+  }
+
+  header .banner .banner-left {
+    width: 100%;
+    margin-top: 90%;
+  }
+
+  header .banner .banner-left h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+  }
+
+  header .banner .banner-left p {
+    width: 100%;
+    text-align: center;
+  }
+
+  header .banner .buttons input {
+    padding: 10px 10px;
+    width: calc(100% - 20px);
+  }
+
+  header .banner .buttons button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  section.content-info {
+    background-image: url(../images/illustration-2.svg),
+      url(../images/bg-curve-mobile.svg);
+    background-size: 80%, cover;
+    background-position: center 100px, top;
+  }
+
+  section .content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  section .content h2 {
+    margin-top: 100%;
+    font-size: 20px;
+  }
+
+  section .content p {
+    margin-bottom: 50px;
+  }
+
+  section .content a {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  section .card {
+    width: calc(100% - 40px);
+  }
+
+
+
+
+  section.access .access-content {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  section.access .access-content div:first-child {
+    width: 100%;
+  }
+
+  section.access .access-content h3 {
+    font-size: 25px;
+  }
+
+  section.access .access-content p {
+    margin-bottom: 30px;
+  }
+
+  section.access .access-content div:last-child {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  section.access .access-content input {
+    width: calc(100% - 40px);
+  }
+
+  section.access .access-content button {
+    width: 100%;
+  }
+
+  footer .row {
+    display: block;
+  }
+
+  footer .row .col {
+    margin-top: 30px;
+  }
+
+  footer .row .col-social ul {
+    justify-content: center;
+    padding: 30px 0px;
+  }
+
+  .attribution {
+    flex-direction: column;
+    height: 130px;
+  }
+
+  .attribution a {
+    color: #cd853f;
+  }
 }
